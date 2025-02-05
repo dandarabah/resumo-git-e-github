@@ -1,8 +1,7 @@
 
-## Resumo de comandos GIT e GITHUB
+## Resumo de comandos GIT e GITHUB  :computer:
 
-
-**UBUNTU - Configuração do GIT**
+:pushpin:**UBUNTU - Configuração do GIT**
 
 **Acesso total de adm:**
 'sudo add-apt-repository ppa:git-core/ppa'
@@ -20,7 +19,7 @@
 
 =================================================
 
-**GIT BASH**
+:pushpin:**GIT BASH**
 
 **Para nomear o git:**
 'git config --global user.name "Alegria"'
@@ -44,9 +43,10 @@
 'git config --global --list'
 
 **Referência: https://git-scm.com/docs/git-init*
+
 ==================================================
 
-**Criar Repositório**
+:pushpin:**Criar Repositório**
 
 **Criar pasta:**
 'mkdir dio-resumos-git-e-github'
@@ -64,6 +64,13 @@
 'touch README.md'
 
 https://readme.so/pt*
+</br></br>
+
+![image](https://github.com/user-attachments/assets/78538653-d6b2-458a-ac62-c77db5d71933)
+</br> ![image](https://github.com/user-attachments/assets/8d565e28-e62e-4690-83c1-2b7ed7bb7ce6)
+</br>
+Copiar e colar as alterações no bloco de nota dentro do readme e salvar. 
+</br></br>
 
 **Adicionar o arquivo no ambiente de preparção:**
 'git add README.md'
@@ -105,7 +112,7 @@ Após as alterações do readme serem efetuadas localmente, usar o comando 'git 
 
 =======================================================
 
-**Desfazendo Alterações no Repositório local**
+:pushpin:**Desfazendo Alterações no Repositório local**
 Para alterar o nome e o versionamento da pasta
 
 **Iniciar o repositório git:**
@@ -134,40 +141,41 @@ Exemplo:
 
 **Opção01. Outra maneira de retornar com commit anterior:*</br>
 
-'''
+'''</br>
 git log</br>
 git reset --soft PEGAR O HASH DO ÚLTIMO COMMIT NO GIT LOG</br>
 '''
-
-**Opção02. Outra maneira de retornar com commit anterior*</br>
-'''
+</br>
+:paperclip:**Opção02. Outra maneira de retornar com commit anterior*</br>
+'''</br>
 git log</br>
 git reset --hard PEGAR O HASH DO ÚLTIMO COMMIT NO GIT LOG</br>
 '''
+</br>
 **O hard ignora o commit anterior e apaga os arquivos.*
-
-**Opção03. Apagar o arquivo.*</br>
-'''
+</br>
+:paperclip:**Opção03. Apagar o arquivo.*</br>
+'''</br>
 git log</br>
 git reset PASSAR O NOME DO ARQUIVO</br>
 git reset resumos/aula01.md</br>
 git status</br>
 '''
-
-**Opção04. Apagar o arquivo.*</br>
-'''
+</br>
+:paperclip:**Opção04. Apagar o arquivo.*</br>
+'''</br>
 'git log'</br>
 'git reset --staged PASSAR O NOME DO ARQUIVO'</br>
 'git reset --staged resumos/aula01.md'</br>
 'git status'</br>
 '''
 </br></br>
-**Histórico mais detalhado:**
+:ledger:**Histórico mais detalhado:**
 git reflog
 
 =======================================================
 
-***TRABALHANDO COM BRANCHES - CRIANDO, MESCLANDO, DELETANDO E TRATANDO CONFLITOS***
+:pushpin:***TRABALHANDO COM BRANCHES - CRIANDO, MESCLANDO, DELETANDO E TRATANDO CONFLITOS***
 
 Branch(tradução:ramo) : é uma ramificação do projeto</br>
 *é um ponteiro móvel para um commit no histórico do repositório;</br>
@@ -210,6 +218,7 @@ apontando para o mesmo commit da branch que estava quando foi criada.
 
 =======================================================
 
+:small_red_triangle_down:</br>
 **Para verificar as alterações da branch main:**
 'git fecth origin main'
 
@@ -219,8 +228,7 @@ apontando para o mesmo commit da branch que estava quando foi criada.
 **Para verificar as diferenças das branchs do remoto e da local:**
 'git merge origin/main'
  
-**Para clonar um repositório, que tenha várias branchs, mas apenas uma 
-uma branch será clonada:**
+**Para clonar um repositório, que tenha várias branchs, mas apenas uma branch será clonada:**
 git clone https://github.com/elidiana/repo-remoto.git --branch teste --single-b
 
 **Para caso de algum arquivo for deletado:**
