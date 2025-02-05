@@ -17,7 +17,7 @@
 
 **Referência: https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git*
 
-=================================================
+=================================================================================================================
 
 :pushpin:**GIT BASH**
 
@@ -44,7 +44,7 @@
 
 **Referência: https://git-scm.com/docs/git-init*
 
-==================================================
+=============================================================================================================
 
 :pushpin:**Criar Repositório**
 
@@ -110,7 +110,7 @@ git commit -m"adicionar arquivo git ignore e diretórios de aula e resumos"
 **Caso o tenha uma alteração do README.md LOCAL (online) e atualizar no remoto**
 Após as alterações do readme serem efetuadas localmente, usar o comando 'git pull'. 
 
-=======================================================
+========================================================================================================
 
 :pushpin:**Desfazendo Alterações no Repositório local**
 Para alterar o nome e o versionamento da pasta
@@ -173,7 +173,7 @@ git status</br>
 :ledger:**Histórico mais detalhado:**
 git reflog
 
-=======================================================
+===============================================================================================================
 
 :pushpin:***TRABALHANDO COM BRANCHES - CRIANDO, MESCLANDO, DELETANDO E TRATANDO CONFLITOS***
 
@@ -216,7 +216,7 @@ apontando para o mesmo commit da branch que estava quando foi criada.
 **Deletar uma branch:**
 'git branch -d teste'
 
-=======================================================
+=====================================================================================================
 
 :small_red_triangle_down:</br>
 **Para verificar as alterações da branch main:**
@@ -251,4 +251,16 @@ git stash
 
 **Para manter a alteração da list e utilizar depois:**
 'git stash apply'
+
+============================================================================================
+
+:pushpin::notebook_with_decorative_cover:**Resumo geral dos comandos mais utilizados**
+</br></br>
+:black_square_button: git status: verifica quais arquivos foram modificados.</br>
+:black_square_button: git add: adiciona as mudanças.</br>
+:black_square_button: git commit: registra as mudanças no repositório.</br>
+:black_square_button: git clone: realiza automaticamente essa conexão entre o repositório remoto e o repositório local.</br>
+:red_circle: Caso quiser alterar o nome  do arquivo: git clone https://github.com/rodrigoalura87/numero-secreto.git repo-clonado, por exemplo.</br>
+:black_square_button: git remote add: adicionar no repositório local um link com o repositório remoto.</br>
+:black_square_button: git push: passar o git push e em sequência precisamos informar para onde enviaremos o commit. Escrevemos origin que é o apelido do repositório remoto, seguido de main que é a branch. git push origin main.
 
